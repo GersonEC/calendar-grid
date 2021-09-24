@@ -428,18 +428,19 @@
 
     <dialog class="modal">
       <form>
-        <div class="input">
-          <input type="text" name="title" placeholder="Anade un titulo" />
+        <div class="input is-outstanding">
+          <div type="text" class="input-boody">
+            <input type="text" name="title" placeholder="Anade un titulo" />
+          </div>
         </div>
 
         <div class="input">
-          <input type="date" />
-        </div>
-        <div class="input">
-          <input type="time" name="time-start" required />
-        </div>
-        <div class="input">
-          <input type="time" name="time-end" required />
+          <i class="icon-clock"></i>
+          <div class="input-body">
+            <input type="date" />
+            <input type="time" name="time-start" required />
+            <input type="time" name="time-end" required />
+          </div>
         </div>
         <div class="input">
           <input
@@ -470,8 +471,6 @@
             rows="5"
           ></textarea>
         </div>
-
-        <input type="submit" />
       </form>
       <div class="modal-actions">
         <button class="button">Cancelar</button>

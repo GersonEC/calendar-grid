@@ -1,3 +1,39 @@
 .input {
-  border: 1px solid red;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-block: 1.5rem;
+}
+
+.input:first-child {
+  margin-block-start: 0;
+}
+
+.input:last-child {
+  margin-block-end: 0;
+}
+
+.input i {
+  font-size: 1.5rem;
+}
+
+.input.is-outstanding input {
+  flex: 1;
+}
+
+.input-body {
+  flex: 1;
+  display: flex;
+  border: 1px solid green;
+}
+
+.input input,
+.input textarea {
+  flex: 1;
+  font: var(--body1-regular);
+  padding-block: 0.625rem;
+  padding-inline: 0.75rem;
+  border: none;
+  outline: none;
+  border-radius: 0.25rem;
 }
