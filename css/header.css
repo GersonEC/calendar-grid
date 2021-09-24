@@ -1,0 +1,17 @@
+.header {
+  border: 1px solid green;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1.5rem;
+}
+
+.header-primary {
+  display: flex;
+  align-items: center;
+}
+
+.header-secondary {
+  display: flex;
+  align-items: center;
+}

@@ -13,12 +13,42 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/index.css" />
-    <title>Calendario</title>
+    <title>Google Calendar</title>
   </head>
   <body>
     <div class="page">
       <header class="header">
-        <a class="button is-rounded is-shadowed" href="#">
+        <div class="header-primary">
+          <button class="button is-compact"></button>
+          <i class="icon-hamburguerButton"></i>
+          <a href="/" aria-current="page" aria-label="Calendar" tabindex="-1">
+            <img src="./images/logo.png" alt="" />
+          </a>
+        </div>
+        <div class="calendarStatus">
+          <button class="button is-secondary">Hoy</button>
+          <span class="calendarStatus-navigation">
+            <a href="#" class="button is-compact" aria-label="Semana anterior">
+              <i class="icon-chevronLeft" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="button is-compact" aria-label="Siguiente semana">
+              <i class="icon-chevronRight" aria-hidden="true"></i>
+            </a>
+          </span>
+          <time class="calendarStatus-date" datetime="25-06-2021"
+            >25 de Junio</time
+          >
+        </div>
+        <div class="header-secondary">
+          <select class="select" name="" id="">
+            <option value="" selected>Semana</option>
+            <option value="">Dia</option>
+          </select>
+          <a href="#user">
+            <img src="" alt="" />
+          </a>
+        </div>
+        <!-- <a class="button is-rounded is-shadowed" href="#">
           <i class="icon-plus"></i>
           <span>button</span>
         </a>
@@ -32,7 +62,7 @@
         <a class="button is-secondary" href="#">
           <i class="icon-plus"></i>
           button
-        </a>
+        </a> -->
       </header>
       <div class="sidebar"></div>
       <main class="calendar">
